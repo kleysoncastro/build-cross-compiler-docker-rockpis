@@ -1,6 +1,6 @@
 # Imagem Ubuntu 22.04 para Cross-Compile Buildroot
 
-###Principais Objetivos
+### Principais Objetivos
 
 1 - Gerar sysroot para compilação cruzada para chips `radxa`, especialmente rockpi s.
 
