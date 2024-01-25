@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  mosquitto:
+    image: cross-compile-ubuntu
+    hostname: cross-compile
+    container_name: cross-compile
+    restart: always
+    user: root
+    ports:
+      - "2222:22"
+
+    volumes:
+      - ./sysroot:/toolchain/sysroot
+      - ./gcc/:/toolchain/gcc
+      - ./developer/:/developer
+      - ./buildroot.dl/:/toolchain/buildroot.dl
+
+    command: tail -f /dev/null
